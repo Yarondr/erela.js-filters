@@ -1,4 +1,4 @@
-import {Structure, Plugin} from "erela.js";
+import {Structure, Plugin} from "erela.js/src";
 
 export class customFilter extends Plugin {
     public load() {
