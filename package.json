@@ -16,6 +16,6 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "erela.js": "https://github.com/Yarondr/erela.js",
+    "erela.js": "https://github.com/Yarondr/erela.js"
   }
 }
