@@ -1,5 +1,5 @@
 {
-  "name": "erela.js-filters",
+  "name": "@yarond/erela.js-filters",
   "version": "1.2.6",
   "description": "A custom filter plugin for erela.js",
   "main": "dist/index.js",
@@ -11,7 +11,15 @@
     "erela filter",
     "erela.js-filters"
   ],
-  "repository": "https://github.com/OpenianDevelopment/erela.js-filters",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .ts ./src",
+    "types": "dts-bundle --removeSource --name @yarond/erela.js-filters--main ./dist --out ../typings/index.d.ts --baseDir ./dist",
+    "docs": "typedoc --json ./docs.json --mode file --excludeProtected --excludePrivate --excludeExternals src/structures",
+    "publish:stable": "yarn build && yarn types && yarn publish --access=public",
+    "publish:beta": "yarn build && yarn types && yarn publish --tag beta --access=public"
+  },
+  "repository": "https://github.com/Yarondr/erela.js-filters",
   "author": "Openian Development",
   "license": "MIT",
   "private": false,
