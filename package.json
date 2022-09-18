@@ -1,9 +1,13 @@
 {
   "name": "@yarond/erela.js-filters",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "A custom filter plugin for erela.js",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
+  "files": [
+    "dist",
+    "typings"
+  ],
   "keywords": [
     "erela.js",
     "erela",
