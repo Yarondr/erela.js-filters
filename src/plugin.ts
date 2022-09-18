@@ -1,4 +1,4 @@
-import {Structure, Plugin} from "erela.js/src";
+import {Structure, Plugin} from "@yarond/erela.js";
 
 export class customFilter extends Plugin {
     public load() {
